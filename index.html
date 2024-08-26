@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Encriptador de texto</title>
+        <link
+            rel="stylesheet"
+            href="./assets/css/style.css"
+        />
+    </head>
+
+    <body>
+        <sidebar class="logo-container">
+            <a href="/">
+                <img
+                    src="./assets/img/alura-logo.svg"
+                    alt="logo"
+                />
+            </a>
+        </sidebar>
+        <main class="main-content">
+            <textarea
+                name="text"
+                id=""
+                placeholder="Ingrese el texto aqui"
+            ></textarea>
+            <div class="warning">
+                <img
+                    src="./assets/img/bi_exclamation-circle-fill.svg"
+                    alt="Exclamación"
+                />
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons-container">
+                <a
+                    href="#"
+                    class="btn btn-template-1"
+                    id="encriptar"
+                    >Encriptar</a
+                >
+                <a
+                    href="#"
+                    class="btn btn-template-2"
+                    id="desencriptar"
+                    >Desencriptar</a
+                >
+            </div>
+        </main>
+        <div class="result-container">
+            <div class="result d-none">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque
+                    vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit
+                    elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.
+                </p>
+                <a
+                    href="#"
+                    class="btn btn-template-3"
+                    id="copiar"
+                    >Copiar</a
+                >
+            </div>
+            <div class="no-results">
+                <img
+                    src="./assets/img/muñeco.svg"
+                    alt="No results"
+                    class="no-results-img img-fluid"
+                />
+                <p class="h3"><strong>Ningún mensaje fue encontrado</strong></p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </body>
+
+    <!--footer><p>© 2024 David Martinez</p></footer -->
+
+    <script src="./assets/js/main.js"></script>
+</html>
