@@ -77,7 +77,7 @@ function _copyToClipboard(text) {
 }
 
 function _validateSpecialcharacters(text) {
-    const specialCharacters = /[^\w\s]|[áéíóúÁÉÍÓÚñÑüÜ]/g
+    const specialCharacters = /[^\w\s!]|[áéíóúÁÉÍÓÚñÑüÜ]/g
 
     return text.match(specialCharacters) ? true : false
 }
